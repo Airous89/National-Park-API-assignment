@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>National Parks App: API</h1>
+
+      <form id="js-form">
+        <label for="search-term">Search terms. Please use, abrvitation and commas for more than one state Ex: AZ,FL.etc</label>
+        <input required type="text" name="search-term" class="js-search-term"  required>
+
+        <label for="max-results">Maximum results to return</label>
+        <input type="number" name="max-results" class="js-max-results" value="10">
+
+        <input type="submit" value="Go!">
+      </form>
+      <p id="js-error-message" class="error-message"></p>
+      <section id="results" class="hidden">
+        <h2>Search results</h2>
+          <ul id="results-list">
+          </ul>
+      </section>
+    </div>
+  </body>
+</html>
